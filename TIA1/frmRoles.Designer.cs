@@ -29,76 +29,82 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txtRol = new System.Windows.Forms.TextBox();
+            this.clbPermisos = new System.Windows.Forms.CheckedListBox();
+            this.btnGuardarRol = new System.Windows.Forms.Button();
+            this.btnEliminarRol = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(53, 100);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(46, 62);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(28, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Rol";
             // 
-            // textBox1
+            // txtRol
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 93);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(138, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtRol.Location = new System.Drawing.Point(81, 62);
+            this.txtRol.Name = "txtRol";
+            this.txtRol.Size = new System.Drawing.Size(203, 20);
+            this.txtRol.TabIndex = 1;
             // 
-            // checkedListBox1
+            // clbPermisos
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(35, 135);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(249, 184);
-            this.checkedListBox1.TabIndex = 2;
+            this.clbPermisos.FormattingEnabled = true;
+            this.clbPermisos.Location = new System.Drawing.Point(35, 103);
+            this.clbPermisos.Name = "clbPermisos";
+            this.clbPermisos.Size = new System.Drawing.Size(249, 184);
+            this.clbPermisos.TabIndex = 2;
             // 
-            // button1
+            // btnGuardarRol
             // 
-            this.button1.Location = new System.Drawing.Point(35, 339);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 37);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGuardarRol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(122)))), ((int)(((byte)(95)))));
+            this.btnGuardarRol.Location = new System.Drawing.Point(35, 313);
+            this.btnGuardarRol.Name = "btnGuardarRol";
+            this.btnGuardarRol.Size = new System.Drawing.Size(87, 37);
+            this.btnGuardarRol.TabIndex = 3;
+            this.btnGuardarRol.Text = "Guardar";
+            this.btnGuardarRol.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnEliminarRol
             // 
-            this.button2.Location = new System.Drawing.Point(199, 339);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 37);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEliminarRol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(122)))), ((int)(((byte)(95)))));
+            this.btnEliminarRol.Location = new System.Drawing.Point(199, 313);
+            this.btnEliminarRol.Name = "btnEliminarRol";
+            this.btnEliminarRol.Size = new System.Drawing.Size(85, 37);
+            this.btnEliminarRol.TabIndex = 4;
+            this.btnEliminarRol.Text = "Eliminar";
+            this.btnEliminarRol.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(104, 42);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(50, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 13);
+            this.label2.Size = new System.Drawing.Size(234, 20);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Administración de roles";
+            this.label2.Text = "ADMINISTRACIÓN DE ROLES";
             // 
             // frmRoles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(330, 409);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
+            this.ClientSize = new System.Drawing.Size(322, 370);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkedListBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnEliminarRol);
+            this.Controls.Add(this.btnGuardarRol);
+            this.Controls.Add(this.clbPermisos);
+            this.Controls.Add(this.txtRol);
             this.Controls.Add(this.label1);
             this.Name = "frmRoles";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Roles";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -108,10 +114,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtRol;
+        private System.Windows.Forms.CheckedListBox clbPermisos;
+        private System.Windows.Forms.Button btnGuardarRol;
+        private System.Windows.Forms.Button btnEliminarRol;
         private System.Windows.Forms.Label label2;
     }
 }
